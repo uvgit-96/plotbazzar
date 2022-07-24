@@ -2,13 +2,13 @@
   <section class="footer_one home1">
     <div class="container pb90">
       <div class="row">
-        <div class="col-sm-5 col-md-5 col-lg-3 col-xl-2">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <div class="footer_contact_widget">
             <h4>Contact Us</h4>
             <ul class="list-unstyled">
-              <li class="text-white df"><span class="flaticon-map mr15"></span><a href="#">329 Queensberry Street, North Melbourne VIC 3051, Australia.</a></li>
-              <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">+123 456 7890</a></li>
-              <li class="text-white"><span class="flaticon-mail-inbox-app mr15"></span><a href="#">support@Plotbazzar.com</a></li>
+              <li class="text-white df"><span class="flaticon-map mr15"></span><a href="#">Office # 29, Ground Floor. Heena Arcade 1 Business Premises, S. V. Road, Jogeshwari (W), Mumbai - 400102.</a></li>
+              <li class="text-white"><span class="flaticon-phone mr15"></span><a href="tel:<?php echo ADMIN_CONTACT; ?>"><?php echo ADMIN_CONTACT; ?></a></li>
+              <li class="text-white"><span class="flaticon-mail-inbox-app mr15"></span><a href="mailto:<?php echo ADMIN_EMAIL; ?>"><?php echo ADMIN_EMAIL; ?></a></li>
             </ul>
           </div>
           <div class="footer_social_widget mt20">
@@ -20,7 +20,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+    <!--     <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
           <div class="footer_qlink_widget">
             <h4>Discover</h4>
             <ul class="list-unstyled">
@@ -43,21 +43,20 @@
               <li><a href="#">Villas</a></li>
             </ul>
           </div>
-        </div>
-        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-2">
+        </div> -->
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <div class="footer_qlink_widget pl0">
             <h4>Quick Links</h4>
             <ul class="list-unstyled">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">User’s Guide</a></li>
-              <li><a href="#">Support Center</a></li>
-              <li><a href="#">Press Info</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="<?php echo base_url();?>">Home</a></li>
+              <li><a href="<?php echo base_url().'agents';?>">Agent Listing</a></li>
+              <li><a href="<?php echo base_url().'properties';?>">Property Listing</a></li>
+              <li><a href="<?php echo base_url().'about-us';?>">About Us</a></li>
+              <li><a href="<?php echo base_url().'contact-us';?>">Contact Us</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-sm-7 col-md-6 col-lg-3 col-xl-4">
+  <!--       <div class="col-sm-7 col-md-6 col-lg-3 col-xl-4">
           <div class="footer_social_widget">
             <h4>Subscribe</h4>
             <p class="text-white mb30">We don’t send spam so don’t worry.</p>
@@ -70,7 +69,7 @@
               </div>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <hr>

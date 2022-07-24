@@ -20139,3 +20139,7 @@ canvas#myChart{
 }
 
  .theader__supText{background-color:#fff;border-radius:2px;padding:1px 2px;color:#010C1F;font-size:8px;font-weight:700;vertical-align:super}
+
+ span.title.on-u-menu-active{
+  border-bottom: 2px solid blue;
+ }

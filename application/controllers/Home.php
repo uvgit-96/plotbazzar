@@ -4,10 +4,14 @@ class Home extends MY_Controller {
 
 	public function __construct(){
 		parent::__construct();	
+		$this->load->model('Web_model', 'web');
 	}
 
 	public function index(){
-		$this->load->view('web/home/home1');
+		$data['agents_list'] = $this->web->get_agents_list();
+		$data['property_list'] = $this->web->get_properties_list();
+		//pre($data['property_list']);
+		$this->load->view('web/home/home1',$data);
 	}
 	
 	public function about_us(){
@@ -19,11 +23,13 @@ class Home extends MY_Controller {
 	}
 	 
 	public function agent_listing(){
-		$this->load->view('web/home/agent_list');
+		$data['agents_list'] = $this->web->get_agents_list();
+		$this->load->view('web/home/agent_list',$data);
 	}
 	 
 	public function property_listing(){
-		$this->load->view('web/home/property_listing');
+		$data['property_list'] = $this->web->get_properties_list();
+		$this->load->view('web/home/property_listing',$data);
 	}
 	
 	public function agent_details(){

@@ -57,3 +57,11 @@ $route['translate_uri_dashes'] = FALSE;
 $route['app'] = 'app/dashboard';
 $route['admin'] = 'app/auth/login';
 $route['tl_login'] = 'app/team_leaders_login/login';
+
+/*Website url routing*/
+
+$route['agents'] = 'home/agent_listing';
+$route['properties'] = 'home/property_listing';	
+$route['about-us'] = 'home/about_us';	
+$route['contact-us'] = 'home/contact';
+$route['register'] = 'home/login';	

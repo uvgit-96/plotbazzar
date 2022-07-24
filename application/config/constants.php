@@ -129,3 +129,9 @@ define('MAILER_PASSWORD',                       'PHtE6r1YROjrjDEqpkIB4qXqR8enNop
 define('MAILER_Address',                        'transmail@2coms.com'); 
 
 define('DOCUMENT_ROOT_PATH',                    $_SERVER['DOCUMENT_ROOT'].'/dev/'); 
+
+/**** ADMIN USER DETAILS CONSTANTS **********/
+
+define('ADMIN_CONTACT',                             '+91 98676 00765');
+define('ADMIN_EMAIL',                             'surajkumar.1664@gmail.com');
+

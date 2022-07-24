@@ -7,7 +7,7 @@
             <h2>Become a Real Estate Agent</h2>
             <p>We only work with the best companies around the globe.</p>
           </div>
-          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="page-login.html">REGISTER NOW</a> </div>
+          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="<?php echo base_url().'register';;?>">REGISTER NOW</a> </div>
         </div>
       </div>
     </div>

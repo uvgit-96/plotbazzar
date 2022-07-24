@@ -14,7 +14,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="<?php echo base_url().'assets/web/';?>css/responsive.css">
 <!-- Title -->
-<title>Houzing - Real Estate HTML Template</title>
+<title>Plotbazzar - Real Estate</title>
 <!-- Favicon -->
 <link href="<?php echo base_url().'assets/web/';?>images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="<?php echo base_url().'assets/web/';?>images/favicon.ico" sizes="128x128" rel="shortcut icon" />
@@ -43,14 +43,14 @@
         </a>
         <!-- Responsive Menu Structure-->
         <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
-          <li> <a href="<?php echo base_url().'home';?>"><span class="title">Home</span></a></li>
-          <li> <a href="<?php echo base_url().'home/agent_listing';?>"><span class="title">Agent Listing</span></a></li>
-          <li> <a href="<?php echo base_url().'home/property_listing';?>"><span class="title">Property Listing</span></a></li>
-          <li> <a href="<?php echo base_url().'home/about_us';?>"><span class="title">About Us</span></a></li>
-          <li><a href="<?php echo base_url().'home/contact'?>">Contact Us</a></li>
-          <li class="list-inline-item list_c"><a href="#"><span class="flaticon-phone mr7"></span> <span>(+88) 1990 6886</span></a></li>
+          <li> <a href="<?php echo base_url();?>"><span class="title <?php if($this->uri->segment(1) === NULL) { echo 'on-u-menu-active'; }?>">Home</span></a></li>
+          <li> <a href="<?php echo base_url().'agents';?>"><span class="title <?php if($this->uri->segment(1) == 'agents') { echo 'on-u-menu-active'; }?>">Agent Listing</span></a></li>
+          <li> <a href="<?php echo base_url().'properties';?>"><span class="title <?php if($this->uri->segment(1) == 'properties') { echo 'on-u-menu-active'; }?>">Property Listing</span></a></li>
+          <li> <a href="<?php echo base_url().'about-us';?>"><span class="title <?php if($this->uri->segment(1) == 'about-us') { echo 'on-u-menu-active'; }?>">About Us</span></a></li>
+          <li><a href="<?php echo base_url().'contact-us'?>"><span class="title <?php if($this->uri->segment(1) == 'contact-us') { echo 'on-u-menu-active'; }?>">Contact Us</span></a></li>
+          <li class="list-inline-item list_c"><a href="tel:<?php echo ADMIN_CONTACT; ?>"><span class="flaticon-phone mr7"></span> <span><?php echo ADMIN_CONTACT; ?></span></a></li>
           <li class="list-inline-item list_s"><a href="#" class="btn" data-toggle="modal" data-target="#logInModal"><span class="flaticon-user"></span></a></li>
-          <li class="list-inline-item add_listing"><a href="page-dashboard-new-property.html"><span class="icon flaticon-button"></span><span class="dn-lg"> Create Listing</span></a></li>
+          <li class="list-inline-item add_listing"><a href=""><span class="icon flaticon-button"></span><span class="dn-lg"> Create Listing</span></a></li>
         </ul>
 	    </nav>
 		</div>
@@ -161,12 +161,12 @@
     <!-- /.mobile-menu -->
     <nav id="menu" class="stylehome1">
       <ul>
-        <li><a href="<?php echo base_url().'home';?>">Home</a></li>
-		<li><a href="<?php echo base_url().'home/agent_listing';?>">Agent Listing</a></li>
-		<li><a href="<?php echo base_url().'home/property_listing';?>">Property Listing</a></li>
-		<li><a href="<?php echo base_url().'home/about_us';?>">About Us</a></li>
-		<li><a href="<?php echo base_url().'home/contact'?>">Contact Us</a></li>
-		<li class="cl_btn"><a class="btn btn-block btn-lg btn-thm rounded" href="#"><span class="icon flaticon-button mr5"></span> Create Listing</a></li>
+        <li><a href="<?php echo base_url();?>">Home</a></li>
+    		<li><a href="<?php echo base_url().'agents';?>">Agent Listing</a></li>
+    		<li><a href="<?php echo base_url().'properties';?>">Property Listing</a></li>
+    		<li><a href="<?php echo base_url().'about-us';?>">About Us</a></li>
+    		<li><a href="<?php echo base_url().'contact-us'?>">Contact Us</a></li>
+    		<li class="cl_btn"><a class="btn btn-block btn-lg btn-thm rounded" href=""><span class="icon flaticon-button mr5"></span> Create Listing</a></li>
       </ul>
     </nav>
   </div>
