@@ -10,7 +10,7 @@ class Home extends MY_Controller {
 	public function index(){
 		$data['agents_list'] = $this->web->get_agents_list();
 		$data['property_list'] = $this->web->get_properties_list();
-		//pre($data['property_list']);
+		
 		$this->load->view('web/home/home1',$data);
 	}
 	
