@@ -14,6 +14,7 @@ class Home extends MY_Controller {
 		$this->load->view('web/home/home1',$data);
 	}
 	
+	
 	public function about_us(){
 		$this->load->view('web/home/about_us');
 	}
