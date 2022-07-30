@@ -36,10 +36,10 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <a href="index.html" class="navbar_brand float-left dn-md">
+        <a href="<?php echo base_url();?>" class="navbar_brand float-left dn-md">
           <img class="logo1 img-fluid" src="<?php echo base_url().'assets/web/';?>images/header-logo2.svg" alt="header-logo.svg">
           <img class="logo2 img-fluid" src="<?php echo base_url().'assets/web/';?>images/header-logo2.svg" alt="header-logo2.svg">
-          <span>Houzing</span>
+          <span>Plotbazzar</span>
         </a>
         <!-- Responsive Menu Structure-->
         <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
@@ -50,7 +50,7 @@
           <li><a href="<?php echo base_url().'contact-us'?>"><span class="title <?php if($this->uri->segment(1) == 'contact-us') { echo 'on-u-menu-active'; }?>">Contact Us</span></a></li>
           <li class="list-inline-item list_c"><a href="tel:<?php echo ADMIN_CONTACT; ?>"><span class="flaticon-phone mr7"></span> <span><?php echo ADMIN_CONTACT; ?></span></a></li>
           <li class="list-inline-item list_s"><a href="#" class="btn" data-toggle="modal" data-target="#logInModal"><span class="flaticon-user"></span></a></li>
-          <li class="list-inline-item add_listing"><a href=""><span class="icon flaticon-button"></span><span class="dn-lg"> Create Listing</span></a></li>
+          <li class="list-inline-item add_listing"><a href="<?php echo base_url().'post-property';?>"><span class="icon flaticon-button"></span><span class="dn-lg"> Post Property</span></a></li>
         </ul>
 	    </nav>
 		</div>

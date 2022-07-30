@@ -29,6 +29,10 @@ class Web_model extends CI_Model{
 		$query=$this->db->get();
 		return $query->result_array();
     }
+
+    function send_enquiry($data){
+    	 return ($this->db->insert('contact_us', $data))  ?   $this->db->insert_id()  :   false;
+    }
     
 	
 

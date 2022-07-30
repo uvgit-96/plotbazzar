@@ -92,25 +92,27 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="form_grid mt100">
-            <h2 class="text-center mb50">Send Us An Email</h2>
-            <form class="contact_form" name="contact_form" action="#" method="post" novalidate>
+            <h2 class="text-center mb50">Contact Us</h2>
+            <form class="contact_form" name="contact_form" method="post" onsubmit="return send_enquiry(event)">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input name="form_name" class="form-control" required="required" type="text" placeholder="Name">
+                    <input name="name" id="name" class="form-control"  type="text" placeholder="Name">
+                    <p style="color: red;display: none;" id="name_error">Name is required.</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input name="form_email" class="form-control required email" required="required" type="email" placeholder="Email">
+                    <input name="contact" id="contact" class="form-control required email"  type="number" placeholder="Contact">
+                    <p style="color: red;display: none;" id="contact_error">Contact is required.</p>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <textarea name="form_message" class="form-control required" rows="6" required placeholder="Enter Your Message"></textarea>
+                    <textarea name="message" id="message" class="form-control required" rows="6"  placeholder="Enter Your Message"></textarea>
                   </div>
-                  <div class="form-group mb0">
-                    <button type="button" class="btn btn-thm">SUBMIT</button>
+                  <div class="form-group mb0 text-center">
+                    <button type="submit" class="btn btn-thm">SUBMIT</button>
                   </div>
                 </div>
               </div>

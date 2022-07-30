@@ -10,7 +10,6 @@ class Home extends MY_Controller {
 	public function index(){
 		$data['agents_list'] = $this->web->get_agents_list();
 		$data['property_list'] = $this->web->get_properties_list();
-		
 		$this->load->view('web/home/home1',$data);
 	}
 	
@@ -42,6 +41,10 @@ class Home extends MY_Controller {
 	
 	public function login(){
 		$this->load->view('web/home/login_register');
+	}
+
+	public function ajax_send_enquiry(){
+		pre($_POST);
 	}
 
 
