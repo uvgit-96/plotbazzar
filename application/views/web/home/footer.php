@@ -35,5 +35,10 @@
 <script src="<?php echo base_url().'assets/web/js/wow.min.js';?>"></script> 
 <!-- Custom script for all pages --> 
 <script src="<?php echo base_url().'assets/web/js/script.js';?>"></script>
+<script type="text/javascript">
+  <?php if($this->uri->segment(1) === NULL) { ?>
+ 
+  <?php } ?>
+</script>
 </body>
 </html>

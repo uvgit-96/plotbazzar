@@ -5,6 +5,8 @@ class Home extends MY_Controller {
 	public function __construct(){
 		parent::__construct();	
 		$this->load->model('Web_model', 'web');
+		date_default_timezone_set("Asia/Kolkata");
+
 	}
 
 	public function index(){
@@ -44,7 +46,13 @@ class Home extends MY_Controller {
 	}
 
 	public function ajax_send_enquiry(){
-		pre($_POST);
+		$data = $_POST;
+		$response = $this->web->send_enquiry($data);
+		if($response){
+			echo true;
+		} else {
+			echo false;
+		}
 	}
 
 

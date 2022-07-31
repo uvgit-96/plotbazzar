@@ -61,7 +61,9 @@ $route['tl_login'] = 'app/team_leaders_login/login';
 /*Website url routing*/
 
 $route['agents'] = 'home/agent_listing';
-$route['properties'] = 'home/property_listing';	
+$route['agent-details/(:any)'] = 'home/agent_details/$1';
+$route['properties'] = 'home/property_listing';
+$route['properties-details/(:any)'] = 'home/property_details/$1';	
 $route['about-us'] = 'home/about_us';	
 $route['contact-us'] = 'home/contact';
 $route['register'] = 'home/login';	

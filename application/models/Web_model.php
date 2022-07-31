@@ -31,6 +31,7 @@ class Web_model extends CI_Model{
     }
 
     function send_enquiry($data){
+    	 $data['datetime'] = date('Y-m-d h-i-s');
     	 return ($this->db->insert('contact_us', $data))  ?   $this->db->insert_id()  :   false;
     }
     

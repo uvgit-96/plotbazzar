@@ -392,25 +392,26 @@
          <div class="col-lg-12">
             <div class="team_slider_home1">
                <?php foreach($agents_list as $agents_list_val){?>
-               <div class="item">
-                  <div class="team_member">
-                     <div class="thumb">
-                        <img class="img-fluid" style="height: 280px;" src="<?php echo base_url().'uploads/profile_photos/'.$agents_list_val['profle_img'];?>" alt="1.jpg">
-                        <div class="overylay">
-                           <ul class="social_icon">
-                              <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['fb_link']; ?>"><i class="fa fa-facebook"></i></a></li>
-                              <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['twt_link']; ?>"><i class="fa fa-twitter"></i></a></li>
-                              <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['insta_link']; ?>"><i class="fa fa-instagram"></i></a></li>
-                              <li class="list-inline-item"><a target="_blank"  href="<?php echo $agents_list_val['lnk_link']; ?>"><i class="fa fa-linkedin"></i></a></li>
-                           </ul>
+                  <div class="item">
+                     <div class="team_member">
+                        <div class="thumb">
+                           <img class="img-fluid" style="height: 280px;" src="<?php echo base_url().'uploads/profile_photos/'.$agents_list_val['profle_img'];?>" alt="1.jpg">
+                           <div class="overylay">
+                              <ul class="social_icon">
+                                 <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['fb_link']; ?>"><i class="fa fa-facebook"></i></a></li>
+                                 <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['twt_link']; ?>"><i class="fa fa-twitter"></i></a></li>
+                                 <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['insta_link']; ?>"><i class="fa fa-instagram"></i></a></li>
+                                 <li class="list-inline-item"><a target="_blank"  href="<?php echo $agents_list_val['lnk_link']; ?>"><i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="details">
+                           <h4><a href="<?php echo base_url().'agent-details/'.$agents_list_val['id']?>"><?php echo $agents_list_val['name']; ?></a></h4>
+                           <p>Lead Designer</p>
+                         <a class="fp_pdate text-thm" style="text-decoration: underline;" href="<?php echo base_url().'agent-details/'.$agents_list_val['id']?>">View Listings</a>
                         </div>
                      </div>
-                     <div class="details">
-                        <h4><a href="page-agent-single.html"><?php echo $agents_list_val['name']; ?></a></h4>
-                        <p>Lead Designer</p>
-                     </div>
                   </div>
-               </div>
                <?php } ?>
             </div>
          </div>

@@ -89,18 +89,10 @@
                     </div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="exampleCheck2">
-                      <label class="custom-control-label" for="exampleCheck2">Remember me</label>
-                      <a class="btn-fpswd float-right text-thm" href="#">Forgot</a>
+                      <!-- <label class="custom-control-label" for="exampleCheck2">Remembesdfsdfr me</label>
+                      <a class="btn-fpswd float-right text-thm" href="#">Forgot</a> -->
                     </div>
                     <button type="submit" class="btn btn-log btn-block btn-thm mt20">Sign in</button>
-                    <div class="row mt10">
-                      <div class="col-lg-12">
-                        <div class="user_log_info">
-                          <p>Username: <span>agency or agent</span></p>
-                          <p>Password: <span>demo</span></p>
-                        </div>
-                      </div>
-                    </div>
                   </form>
                 </div>
               </div>

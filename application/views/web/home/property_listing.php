@@ -268,29 +268,29 @@
           </div>
         </div>
       </div>
-                <div class="row">
-            <div class="col-lg-12">
-              <div class="mbp_pagination mt10">
-                <ul class="page_navigation">
-                  <li class="page-item">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <span class="fa fa-arrow-left"></span></a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">3 <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">...</a></li>
-                  <li class="page-item"><a class="page-link" href="#">15</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#"><span class="fa fa-arrow-right"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+     <!--  <div class="row">
+      <div class="col-lg-12">
+        <div class="mbp_pagination mt10">
+          <ul class="page_navigation">
+            <li class="page-item">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <span class="fa fa-arrow-left"></span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">3 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">15</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"><span class="fa fa-arrow-right"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
     </div>
   </section>
 <?php include 'footer.php';?>  

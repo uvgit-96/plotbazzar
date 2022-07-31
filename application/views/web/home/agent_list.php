@@ -22,9 +22,8 @@
          <div class="col-lg-8 col-xl-9">
             <div class="row">
                <?php foreach($agents_list as $agents_list_val){?>
-                 <a href="<?php echo base_url().'home/agent_details';?>">
-               <div class="col-md-6 col-lg-6">
-                 
+               <a href="<?php echo base_url().'home/agent_details';?>">
+                  <div class="col-md-6 col-lg-6">
                      <div class="feat_property list agent">
                         <div class="thumb">
                            <img class="img-whp" src="<?php echo base_url().'uploads/profile_photos/'.$agents_list_val['profle_img'];?>" style="height: 250px;" >
@@ -32,25 +31,25 @@
                         <div class="details">
                            <div class="tc_content">
                               <h4><?php echo $agents_list_val['name']; ?></h4>
-                  <!-- <p>Senior agent, Houzing Home</p> -->
-                  <ul class="prop_details mb0">
-                  <li class="text-left"><a href="#"><span>Office</span> &nbsp;<?php echo $agents_list_val['office_contact']; ?></a></li>
-                  <li class="text-left"><a href="#"><span>Mobile</span> <?php echo $agents_list_val['contact']; ?></a></li>
-                  <li class="text-left"><a href="#"><span>Email</span> &nbsp;&nbsp; <?php echo $agents_list_val['email']; ?></a></li>
-                  </ul>
-                  </div>
-                  <div class="fp_footer">
-                  <a class="fp_pdate float-left text-thm" href="#">View Listings</a>
-                  <ul class="social_icons float-right mb0">
-                  <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['fb_link']; ?>"><i class="fa fa-facebook"></i></a></li>
-                  <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['twt_link']; ?>"><i class="fa fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['insta_link']; ?>"><i class="fa fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['lnk_link']; ?>"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                  </div>
-                  </div>
-                  </div>
-                  
+                              <!-- <p>Senior agent, Houzing Home</p> -->
+                              <ul class="prop_details mb0">
+                                 <li class="text-left">
+               <a href="#"><span>Office</span> &nbsp;<?php echo $agents_list_val['office_contact']; ?></a></li>
+               <li class="text-left"><a href="#"><span>Mobile</span> <?php echo $agents_list_val['contact']; ?></a></li>
+               <li class="text-left"><a href="#"><span>Email</span> &nbsp;&nbsp; <?php echo $agents_list_val['email']; ?></a></li>
+               </ul>
+               </div>
+               <div class="fp_footer">
+               <a class="fp_pdate float-left text-thm" href="<?php echo base_url().'agent-details/'.$agents_list_val['id']?>">View Listings</a>
+               <ul class="social_icons float-right mb0">
+               <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['fb_link']; ?>"><i class="fa fa-facebook"></i></a></li>
+               <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['twt_link']; ?>"><i class="fa fa-twitter"></i></a></li>
+               <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['insta_link']; ?>"><i class="fa fa-instagram"></i></a></li>
+               <li class="list-inline-item"><a target="_blank" href="<?php echo $agents_list_val['lnk_link']; ?>"><i class="fa fa-linkedin"></i></a></li>
+               </ul>
+               </div>
+               </div>
+               </div>
                </div>
                </a>
                <?php } ?>

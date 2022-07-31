@@ -92,8 +92,12 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="form_grid mt100">
+              <div class="alert alert-success alert-dismissible" style="display: none;">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> Thank you for contacting us our team will connect with you soon!
+              </div>
             <h2 class="text-center mb50">Contact Us</h2>
-            <form class="contact_form" name="contact_form" method="post" onsubmit="return send_enquiry(event)">
+            <form class="contact_form" name="contact_form" id="contact_form" method="post" onsubmit="return send_enquiry(event)">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
